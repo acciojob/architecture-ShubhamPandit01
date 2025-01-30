@@ -1,16 +1,112 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architecture</title>
+    <style>
+        /* General styling for the entire page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
 
+        .container {
+            width: 1100px;
+            margin: 0 auto;
+        }
+
+        /* Styling for the div with class 'imageContainer' */
+        .imageContainer {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .imageContainer img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table td {
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+
+        table td img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Width control for the table columns */
+        .first-col, .last-col {
+            width: 200px;
+        }
+
+        .middle-col {
+            width: 600px;
+            text-align: left;
+        }
+
+        /* Styling for the text content in the middle column */
+        .middle-col p {
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* Additional enhancements */
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .table-container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        table td img {
+            border-radius: 8px;
+        }
+    </style>
+</head>
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+    <div class="container">
+        <h1>Architecture: Beauty in Design</h1>
+
+        <!-- Image Container Section -->
+        <div class="imageContainer">
+            <img src="https://via.placeholder.com/800x400" alt="Architecture Image">
+        </div>
+
+        <!-- Table Section -->
+        <div class="table-container">
+            <table>
+                <tr>
+                    <td class="first-col"><img src="https://via.placeholder.com/200x150" alt="Building Image"></td>
+                    <td class="middle-col"><p>This is a beautiful example of classical architecture, where the elements of symmetry and proportion are key features.</p></td>
+                    <td class="last-col"><img src="https://via.placeholder.com/200x150" alt="Building Image"></td>
+                </tr>
+                <tr>
+                    <td class="first-col"><img src="https://via.placeholder.com/200x150" alt="Modern Building"></td>
+                    <td class="middle-col"><p>Modern architecture often focuses on minimalism and the integration of natural elements, like glass and wood, into the design.</p></td>
+                    <td class="last-col"><img src="https://via.placeholder.com/200x150" alt="Modern Building"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
 
 </body>
-
 </html>
